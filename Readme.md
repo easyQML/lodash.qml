@@ -1,5 +1,7 @@
 # Lodash for QML
 
+![Made by Ukrainian](https://img.shields.io/static/v1?label=Made%20by&message=Ukrainian&labelColor=1f5fb2&color=fad247&style=for-the-badge)
+
 This is a simple [Lodash](https://lodash.com/) wrapper for QML.
 The installation process is not quite convenient yet, but stay tuned :) Maybe, I will update it in a few centuries.
 
