@@ -1,4 +1,4 @@
-# Lodash for QML
+# [Lodash](https://lodash.com/) for QML
 
 [![Made by Ukrainian](https://img.shields.io/static/v1?label=Made%20by&message=Ukrainian&labelColor=1f5fb2&color=fad247&style=for-the-badge)](https://github.com/GooRoo/ukrainian-shields)
 
@@ -12,7 +12,7 @@ The installation process is not quite convenient yet, but stay tuned :) Maybe, I
 ```sh
 $ mkdir 3rdParty
 $ cd 3rdParty
-$ git clone https://bitbucket.org/gooroo/qml-lodash.git
+$ git clone https://github.com/easyQML/lodash.qml.git
 ```
 
 ### Get the Lodash itself
@@ -27,21 +27,21 @@ $ lodash exports="none" iife=";(function () {%output% root._ = _; }.call(this));
 
 ### Update your QML import path
 
-Please, refer to the [official documentation](http://doc.qt.io/qt-5/qtqml-syntax-imports.html#qml-import-path). I tried it with both local file-system paths and Qt Resource system paths, and it works.
+Please, refer to the [official documentation](http://doc.qt.io/qt-6/qtqml-syntax-imports.html#qml-import-path). I tried it with both local file-system paths and Qt Resource system paths, and it works.
 
 ## Usage
 
 ```qml
-import QtQuick 2.10
-import QtQuick.Window 2.10
+import QtQuick
+import QtQuick.Window
 
-import lodash 4.17  // import the library
+import lodash  // import the library
 
 Window {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Hello Lodash")
+    title: qsTr('Hello Lodash')
 
     Component.onCompleted: {
         function megaprint(v) {
@@ -50,11 +50,11 @@ Window {
 
         // and it magically works here who knows why:
         megaprint(
-            _.partition([1, 2, 3, 4], function (n) { return n % 2 })
+            _.partition([1, 2, 3, 4], n => n % 2)
         )
 
         megaprint(
-            _([1, 2, 3]).map(function(n) { return n * 2})
+            _([1, 2, 3]).map(n => n * 2)
         )
     }
 }
@@ -67,4 +67,4 @@ qml: [2,4,6]
 
 ## License
 
-[Lodash](https://lodash.com/) library is distributed under [MIT license](https://lodash.com/license), so my outstanding three lines of code follow the same way: [LICENSE](LICENSE).
+[Lodash](https://lodash.com/) library is distributed under [MIT license](https://lodash.com/license), so my outstanding three lines of code follow the same path: [LICENSE](LICENSE).
