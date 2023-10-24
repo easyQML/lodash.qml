@@ -21,7 +21,7 @@ I've bundled the latest available version (which is 4.17.5) with the wrapper, bu
 
 ```sh
 $ npm install -g lodash-cli
-$ cd qml-lodash/lodash
+$ cd qml/lodash
 $ lodash exports="none" iife=";(function () {%output% root._ = _; }.call(this));" -o lodash.js
 ```
 
