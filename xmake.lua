@@ -12,3 +12,7 @@ target('lodash.qml')
 	set_values('qt.qmlplugin.majorversion', '4')
 	set_values('qt.qmlplugin.minorversion', '17')
 	set_values('qt.qmlplugin.qmldirfile', 'qml/lodash/qmldir')
+
+	on_install(function (target)
+		os.cp(target:targetdir(), path.join(target:installdir(), 'lodash'))
+	end)
