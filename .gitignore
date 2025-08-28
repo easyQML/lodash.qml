@@ -1,0 +1,7 @@
+.vscode/*
+.xmake/*
+build/*
+node_modules/*
+*.qmlc
+*.jsc
+.DS_Store

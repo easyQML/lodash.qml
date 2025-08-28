@@ -1,1 +1,7 @@
+module lodash
 Lodash 4.17 lodash-ext.js
+plugin lodash.qml
+classname minervous::lodash::Plugin
+typeinfo plugins.qmltypes
+
+prefer :/qt/qml/lodash/

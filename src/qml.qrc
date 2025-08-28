@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+  <qresource prefix="/qt/qml">
+	<file alias="lodash/lodash-ext.js">../qml/lodash/lodash-ext.js</file>
+	<file alias="lodash/lodash.js">../qml/lodash/lodash.js</file>
+  </qresource>
+</RCC>
