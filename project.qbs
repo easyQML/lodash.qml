@@ -1,7 +1,4 @@
 Project {
-    property string installContentsPath
-    property string installImportsDir
-
 	Product {
 		name: 'lodash.qml'
 
